@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <ProjectReference Include="..\Fantasy RPG.App\Fantasy RPG.App.csproj" />
+    <ProjectReference Include="..\Fantasy RPG.domain\Fantasy RPG.domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fantasy RPG.App\Fantasy RPG.App.csproj" />
-    <ProjectReference Include="..\Fantasy RPG.domain\Fantasy RPG.domain.csproj" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>
