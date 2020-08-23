@@ -18,9 +18,9 @@ namespace Fantasy_RPG.App.Concrete
             string suburbsDecription = "You are in the suburbs. Watch out for bandits or thiefs";
             string graveyardDecription = "This place isn't nice. You have a strange feeling like someone is watching you";
             string forestDecription = "Sound of wind, birds, but be careful of wild animals";
-            string plainDecription = "";
+            string plainDecription = "Open space, good visibility, but watch out of enemies";
             string campDecription = "A little camp in the middle of plain. Take a rest. You can regenerate your health points here and help these people with their duties";
-            string templeDecription = "";
+            string templeDecription = "You can take a rest and meditate here. You are safe";
             string villageDecription = "You've just arrived to the village. ";
             string libraryDecription = "Quiet and safe place. You may improve your skills if you ";
             string darkForestDecription = "Dark, thick and disturbing place. Some people said they saw the ghosts of the lost wayfarers. Don't spend too much time in this place";
