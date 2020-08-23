@@ -47,12 +47,12 @@ namespace Fantasy_RPG
             CharacterService characterService = new CharacterService();
 
             string characterArticle = characterNo == 2 ? "an" : "a";
-            //string characterType = characterService.GetItem(characterNo).ToString();
-            Console.WriteLine($"Welcome {playerName}, you chose {characterArticle} {characterService.GetItem(characterNo)}");
+            string characterType = characterService.GetItem(characterNo).ToString();
+            Console.WriteLine($"Welcome {playerName}, you chose {characterArticle} {characterType}");
             //TODO: build a character
             var character = characterService.GetItem(characterNo);
-            Console.WriteLine(character);
             //TODO: start game in first location
+            Console.WriteLine();
         }
     }
 }
