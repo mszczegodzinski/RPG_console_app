@@ -1,15 +1,17 @@
 ﻿using Fantasy_RPG.App.Abstract;
-using Fantasy_RPG.domain.Entity;
+using Fantasy_RPG.domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Fantasy_RPG.App.Common
 {
-    public class BaseService<T> : IService<T> where T : Character
+    public class BaseServiceLocation<T> : IService<T> where T : Location
     {
         public List<T> Items { get; set; }
 
-        public BaseService()
+        public BaseServiceLocation()
         {
             Items = new List<T>();
         }
@@ -38,5 +40,6 @@ namespace Fantasy_RPG.App.Common
         {
             return Items.Count();
         }
+
     }
 }

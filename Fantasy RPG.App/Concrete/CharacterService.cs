@@ -14,8 +14,8 @@ namespace Fantasy_RPG.App.Concrete
         private void Initialize()
         {
             List<Item> Items = new List<Item>();
-            AddItem(new Warrior(1, "Name", 4, 1, 50, 0, Items, null));
-            AddItem(new Amazon(2, "Name", 3, 2, 50, 0, Items, null));
+            AddItem(new Warrior(1, "Name", 4, 1, 50, 0, Items, false));
+            AddItem(new Amazon(2, "Name", 3, 2, 50, 0, Items, false));
         }
 
 

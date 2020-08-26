@@ -12,5 +12,7 @@ namespace Fantasy_RPG.App.Abstract
 
         void RemoveItem(T item);
 
+        int GetLength();
+
     }
 }
