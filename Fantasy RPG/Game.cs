@@ -1,5 +1,6 @@
 ﻿using Fantasy_RPG.App.Concrete;
 using Fantasy_RPG.domain.Common;
+using Fantasy_RPG.Helpers;
 using System;
 
 namespace Fantasy_RPG
@@ -18,7 +19,6 @@ namespace Fantasy_RPG
                 "2. Amazon \r\n");
             int characterNo;
             bool isCharacterNoCorrect = Int32.TryParse(Console.ReadLine(), out characterNo);
-            Console.WriteLine(!isCharacterNoCorrect);
             bool isCorrectRange = false;
 
             //if input is incorrect, try until it will be correct:
@@ -57,6 +57,8 @@ namespace Fantasy_RPG
             var currentLocation = locationService.GetItem(currentLocationCounter);
             var random = new Random();
             int turn = 1;
+            HelpersClass helpers = new HelpersClass();
+            
 
             //start game in first location:
             while (!isEndGame)
@@ -65,6 +67,11 @@ namespace Fantasy_RPG
                 Console.WriteLine($"Turn {turn}");
                 Console.WriteLine($"{currentLocation.Id}. {currentLocation.Name}");
                 Console.WriteLine(currentLocation.Description);
+                Console.WriteLine("Press any button to continue");
+                Console.ReadLine();
+                //string returnEventType = helpers.EventType();
+                string returnEventType = helpers.LocationEvent(currentLocationCounter);
+                Console.WriteLine($"{returnEventType}");
                 Console.WriteLine("Press any button to move on");
                 Console.ReadLine();
 
@@ -78,10 +85,10 @@ namespace Fantasy_RPG
                 turn++;
 
                 //temporary condition to end game:
-                if (turn == 25)
-                {
-                    isEndGame = true;
-                }
+                //if (turn == 25)
+                //{
+                //    isEndGame = true;
+                //}
 
 
             }

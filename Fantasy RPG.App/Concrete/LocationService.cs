@@ -25,7 +25,7 @@ namespace Fantasy_RPG.App.Concrete
             string villageDecription = "You've just arrived to the village. You can earn gold if you do some work, spend some gold when you drink in the tavern and regenerate your health points";
             string libraryDecription = "Quiet and safe place. You may improve your skills if you ";
             string darkForestDecription = "Dark, thick and disturbing place. Some people said they saw the ghosts of the lost wayfarers. Don't spend too much time in this place";
-            string swampDecription = "Uninhabitated and wild place. Mind for your steps";
+            string swampDecription = "Uninhabited and wild place. Mind for your steps";
             string abandonedTowerDecription = "Cursed place. These properdy owned to a warlock many years ago. It looks like forsaken now, but notice in front of says 'get out of here if you want to be alive'. Maybe I should come back later when I'll be better prepared?";
 
             AddItem(new Location(1, "City", cityDecription));

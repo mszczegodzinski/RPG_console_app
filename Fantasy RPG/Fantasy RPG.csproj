@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Fantasy RPG.domain\Fantasy RPG.domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-  </ItemGroup>
-
 </Project>
